@@ -38,3 +38,11 @@
     background: linear-gradient(to right, rgb(252,132,46), rgb(114,53,31));
     color: white;
 }
+.container{
+    margin-top: 70px;
+    }
+.container2{
+    width: 200px;
+    margin-left: 1000px;
+    margin-top: 20px;
+    }

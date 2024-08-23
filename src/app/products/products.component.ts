@@ -13,7 +13,7 @@ import { Router, RouterLink } from '@angular/router';
 })
 export class ProductsComponent {
   products: Product[] = [];
-
+  selectedSort: string = 'price';
   constructor(private productService: ProductService, private router: Router) {}
 
   ngOnInit(): void {
@@ -35,4 +35,18 @@ export class ProductsComponent {
   viewProductDetails(productId: number): void {
     this.router.navigate(['/product-details', productId]);
   }
-}
+
+  sortProducts(): void {
+    if (this.selectedSort === 'price') {
+      this.products.sort((a, b) => a.price - b.price);
+    } else if (this.selectedSort === 'title') {
+      this.products.sort((a, b) => a.title.localeCompare(b.title));
+    } else if (this.selectedSort === 'category') {
+      this.products.sort((a, b) => a.category.name.localeCompare(b.category.name));
+    }
+  }
+  onSortChange(event: Event): void {
+    const target = event.target as HTMLSelectElement;
+    this.selectedSort = target.value;
+    this.sortProducts(); 
+}}
