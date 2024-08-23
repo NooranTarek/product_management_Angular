@@ -22,9 +22,9 @@ export class ProductsComponent {
 
   loadProducts(): void {
     this.productService.getProducts().subscribe({
-      next: (data: Product[]) => {
-        console.log('Fetched products:', data);         
-        this.products = data;
+      next: (data: any) => {
+        console.log('Fetched products:', data.products);         
+        this.products = data.products;
 
       },
       error: (err) => {

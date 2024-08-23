@@ -12,4 +12,8 @@ export class ProductService {
   getProducts(): Observable<Product[]> {
     return this._HttpClient.get<Product[]>('http://127.0.0.1:8000/api/products');
   }
+  getSpecificProduct(id: number): Observable<Product> {
+    return this._HttpClient.get<Product>(`http://127.0.0.1:8000/api/products/${id}`);
+  }
+  
 }

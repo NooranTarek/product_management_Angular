@@ -1,24 +1,32 @@
 <div class="container d-flex justify-content-center mt-50 mb-50">
     <div class="row">
-      <div *ngFor="let product of products" class="col-md-4 mt-2">
-        <div class="card">
-          <div class="card-body">
-            <div class="card-img-actions">
-              <img [src]="product.image" class="card-img img-fluid" width="96" height="350" alt="{{ product.title }}">
+        @for (product of this.products;track product.id){
+        <div class="col-md-4 mt-2">
+
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h6 class="categoryName">
+                            {{ product.category.name }}              
+                        </h6>
+
+                        <div class="card-img-actions text-center">
+                            <img [src]="product.image" class="card-img img-fluid" alt="{{ product.title }}">
+                        </div>
+                        <div class="mt-auto text-center">
+                            <div class="mb-2">
+                                <h2 class="font-weight-semibold mb-2">
+                                    {{ product.title }}
+                                </h2>
+                                <h6 class="font-weight-semibold mb-2">
+                                    {{ product.description }}
+                                </h6>
+                            </div>
+                            <h3 class="mb-0 font-weight-semibold">${{ product.price }}</h3>
+                            <button type="button" class="btn">Show Details</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="card-body bg-light text-center">
-            <div class="mb-2">
-              <h6 class="font-weight-semibold mb-2">
-                <a href="#" class="text-default mb-2" data-abc="true">{{ product.title }}</a>
-              </h6>
-              <a href="#" class="text-muted" data-abc="true">{{ product.category.name }}</a>
-            </div>
-            <h3 class="mb-0 font-weight-semibold">${{ product.price.toFixed(2) }}</h3>
-            <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i>Show Details</button>
-          </div>
-        </div>
-      </div>
+        }
     </div>
-  </div>
-  
+</div>
