@@ -14,6 +14,8 @@ import { Router, RouterLink } from '@angular/router';
 export class ProductsComponent {
   products: Product[] = [];
   selectedSort: string = 'price';
+  searchQuery: string = '';
+
   constructor(private productService: ProductService, private router: Router) {}
 
   ngOnInit(): void {
@@ -49,4 +51,22 @@ export class ProductsComponent {
     const target = event.target as HTMLSelectElement;
     this.selectedSort = target.value;
     this.sortProducts(); 
-}}
+}
+onSearchChange(event: Event): void {
+  const target = event.target as HTMLInputElement;
+  this.searchQuery = target.value;
+
+  if (this.searchQuery.length > 0) {
+    this.productService.searchProducts(this.searchQuery).subscribe({
+      next: (data: any) => {
+        this.products = data.products;
+      },
+      error: (err) => {
+        console.error('Error searching products', err);
+      }
+    });
+  } else {
+    this.loadProducts();  
+  }
+}
+}

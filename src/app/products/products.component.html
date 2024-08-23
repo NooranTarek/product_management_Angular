@@ -7,14 +7,11 @@
     </select>
   </div>
   <div id="search">
-    <input type="search" name="q" aria-label="Search for inspiration" placeholder="Search..."/>
-</div>
+    <input type="search" name="value" aria-label="Search for inspiration" placeholder="Search..." (input)="onSearchChange($event)" />
+  </div>
+  
 
-
-<div id="results">
-	
-</div>
-<div class="container d-flex justify-content-center mt-50 mb-50">
+<div class="container  justify-content-center mt-50 mb-50">
     <div class="row">
         @for (product of this.products;track product.id){
         <div class="col-md-4 mt-2">
@@ -26,7 +23,13 @@
                         </h6>
 
                         <div class="card-img-actions text-center">
-                            <img [src]="product.image" class="card-img img-fluid" alt="{{ product.title }}">
+                            <img 
+                                [src]="product.image" 
+                                class="card-img img-fluid" 
+                                alt="{{ product.title }}"
+                                (click)="viewProductDetails(product.id)" 
+                                style="cursor: pointer;" 
+                            >
                         </div>
                         <div class="mt-auto text-center">
                             <div class="mb-2">
@@ -37,7 +40,7 @@
                                     {{ product.description }}
                                 </h6> -->
                             </div>
-                            <h3 class="mb-0 font-weight-semibold">${{ product.price }}</h3>
+                            <h3 class="mb-0 font-weight-semibold">EGP{{ product.price }}</h3>
                             <button (click)="viewProductDetails(product.id)" type="button" class="btn">Show Details</button>
                         </div>
                     </div>

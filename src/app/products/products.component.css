@@ -12,9 +12,6 @@
     object-fit: cover; 
 }
 
-.card {
-    height: 100%;
-}
 
 .card-body {
     background: linear-gradient(to right, rgb(29, 15, 6), rgb(88, 37, 17));
@@ -95,4 +92,3 @@
         border-color: #6e3b00; 
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     }
-    

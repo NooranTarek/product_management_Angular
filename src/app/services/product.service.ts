@@ -15,5 +15,7 @@ export class ProductService {
   getSpecificProduct(id: number): Observable<Product> {
     return this._HttpClient.get<Product>(`http://127.0.0.1:8000/api/products/${id}`);
   }
-  
+  searchProducts(query: string): Observable<Product[]> {
+    return this._HttpClient.get<Product[]>(`http://127.0.0.1:8000/api/products/search?value=${query}`);
+  }
 }
