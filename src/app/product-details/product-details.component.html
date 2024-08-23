@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="product-card">
+        @if(product) {
+            <div class="badge"><h1>{{product.title}}</h1></div>
+            <div class="img">
+                <img [src]="product.image" alt="{{ product.title }}">
+            </div>
+            <div class="product-details">
+                <span class="product-category">{{ product.category.name }}</span>
+                <p>{{ product.description }}</p>
+                <div class="product-bottom-details">
+                    <div class="product-price">
+                        <small>${{ product.price }}</small>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

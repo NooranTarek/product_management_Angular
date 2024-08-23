@@ -17,12 +17,12 @@
                                 <h2 class="font-weight-semibold mb-2">
                                     {{ product.title }}
                                 </h2>
-                                <h6 class="font-weight-semibold mb-2">
+                                <!-- <h6 class="font-weight-semibold mb-2">
                                     {{ product.description }}
-                                </h6>
+                                </h6> -->
                             </div>
                             <h3 class="mb-0 font-weight-semibold">${{ product.price }}</h3>
-                            <button type="button" class="btn">Show Details</button>
+                            <button (click)="viewProductDetails(product.id)" type="button" class="btn">Show Details</button>
                         </div>
                     </div>
                 </div>

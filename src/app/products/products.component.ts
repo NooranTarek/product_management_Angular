@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Product } from '../interfaces/product';
 import { ProductService } from '../services/product.service';
 import { CommonModule, NgFor } from '@angular/common';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-products',
@@ -14,7 +14,7 @@ import { RouterLink } from '@angular/router';
 export class ProductsComponent {
   products: Product[] = [];
 
-  constructor(private productService: ProductService) {}
+  constructor(private productService: ProductService, private router: Router) {}
 
   ngOnInit(): void {
     this.loadProducts();
@@ -31,5 +31,8 @@ export class ProductsComponent {
         console.error('Error fetching products', err);
       }
     });
+  }
+  viewProductDetails(productId: number): void {
+    this.router.navigate(['/product-details', productId]);
   }
 }

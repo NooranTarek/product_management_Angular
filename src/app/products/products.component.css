@@ -1,19 +1,19 @@
 .card-img-actions {
-    height: 250px; /* Set a fixed height for the image container */
+    height: 250px; 
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Hide any overflowed part of the image */
+    overflow: hidden;
 }
 
 .card-img {
     height: 100%;
-    width: auto; /* Ensure the image maintains its aspect ratio */
-    object-fit: cover; /* Ensure the image covers the area without distortion */
+    width: auto; 
+    object-fit: cover; 
 }
 
 .card {
-    height: 100%; /* Ensures all cards have the same height */
+    height: 100%;
 }
 
 .card-body {
