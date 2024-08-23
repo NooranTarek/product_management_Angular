@@ -1,0 +1,20 @@
+/* app.component.css */
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  h1 {
+    font-weight: 700; 
+    -webkit-text-stroke: 1px black;
+  }
+  h3{
+    -webkit-text-stroke: 1px black;
+  }
+  
+  button {
+    background-color: #ffc107; 
+    border-color: #ffc107;
+    color: #fff;
+  }
+  
