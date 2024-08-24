@@ -1,27 +1,50 @@
-# ProductManagement
+<h1 style="text-align: center; color: #2ecc71;">Angular Project: Welcome Page, Products Page, and Product Details</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.5.
+<p align="center">
+    <img src="https://img.shields.io/badge/Angular-18.x-red?style=flat-square">
+    <img src="https://img.shields.io/badge/Node.js-16.x-yellow?style=flat-square">
+    <img src="https://img.shields.io/badge/npm-8.x-blue?style=flat-square">
+</p>
 
-## Development server
+<h2 style="color: #2c3e50;">📄 Project Description</h2>
+<p>This Angular project includes a simple welcome page, a products page, and a product details page. It demonstrates basic Angular functionality and routing.</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<h2 style="color: #2c3e50;">✨ Features</h2>
+<ul>
+    <li>Welcome page with a simple introduction.</li>
+    <li>Products page displaying a list of products.</li>
+    <li>Product details page showing detailed information about a selected product.</li>
+</ul>
 
-## Code scaffolding
+<h2 style="color: #2c3e50;">🚀 Prerequisites</h2>
+<ul>
+    <li><strong>Node.js</strong> version >= 16.x</li>
+    <li><strong>npm</strong> version >= 8.x</li>
+    <li><strong>Angular CLI</strong> version >= 18.x</li>
+</ul>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<h2 style="color: #2c3e50;">⚙️ Installation Instructions</h2>
+<ol>
+    <li><strong>Clone the Repository:</strong>
+        <pre style="background: #f4f4f4; padding: 10px; border-radius: 5px;">git clone git@github.com:NooranTarek/product_management_Angular.git
+cd product_management_Angular</pre>
+    </li>
+    <li><strong>Install Dependencies:</strong>
+        <pre style="background: #f4f4f4; padding: 10px; border-radius: 5px;">npm install</pre>
+    </li>
+    <li><strong>Serve the Application:</strong>
+        <pre style="background: #f4f4f4; padding: 10px; border-radius: 5px;">ng serve -o</pre>
+    </li>
+</ol>
 
-## Build
+<h2 style="color: #2c3e50;">📄 Pages</h2>
+<ul>
+    <li><strong>Welcome Page:</strong> Displays a brief introduction and links to other pages.</li>
+    <li><strong>Products Page:</strong> Shows a list of products fetched from the backend .</li>
+    <li><strong>Product Details Page:</strong> Provides detailed information about a specific product when selected.</li>
+</ul>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+<footer style="text-align: center; padding-top: 20px;">
+    <p style="color: #95a5a6;">Made with ❤️ by <a href="https://github.com/username" style="color: #2ecc71; text-decoration: none;">Nouran Tarek</a></p>
+</footer>
