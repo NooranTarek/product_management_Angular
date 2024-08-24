@@ -46,5 +46,5 @@ cd product_management_Angular</pre>
 
 
 <footer style="text-align: center; padding-top: 20px;">
-    <p style="color: #95a5a6;">Made with ❤️ by <a href="https://github.com/username" style="color: #2ecc71; text-decoration: none;">Nouran Tarek</a></p>
+    <p style="color: #95a5a6;">Made with ❤️ by <a href="https://github.com/username" style="color: #2ecc71; text-decoration: none;">NooranTarek</a></p>
 </footer>
