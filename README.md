@@ -18,9 +18,9 @@
 
 <h2 style="color: #2c3e50;">🚀 Prerequisites</h2>
 <ul>
-    <li><strong>Node.js</strong> version >= 16.x</li>
-    <li><strong>npm</strong> version >= 8.x</li>
-    <li><strong>Angular CLI</strong> version >= 18.x</li>
+    <li><strong>Node.js</strong> version => 16.x</li>
+    <li><strong>npm</strong> version => 8.x</li>
+    <li><strong>Angular CLI</strong> version => 18.x</li>
 </ul>
 
 <h2 style="color: #2c3e50;">⚙️ Installation Instructions</h2>
